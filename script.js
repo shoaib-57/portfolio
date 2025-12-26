@@ -21,3 +21,14 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+fetch("https://your-backend-url/api/contact", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name,
+    email,
+    message
+  })
+});
